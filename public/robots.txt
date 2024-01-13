@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://https://desarrollodesitiosweb.co
+Host: https://desarrollodesitiosweb.co
 
 # Sitemaps
-Sitemap: https://https://desarrollodesitiosweb.co/sitemap.xml
+Sitemap: https://desarrollodesitiosweb.co/sitemap.xml
