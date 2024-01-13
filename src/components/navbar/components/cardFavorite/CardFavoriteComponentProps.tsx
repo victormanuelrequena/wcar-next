@@ -1,4 +1,1 @@
-import CarEntity from "../../../../../../domain/entities/CarEntity";
-
-export default interface CardFavoriteComponentProps{
-}
+export default interface CardFavoriteComponentProps {}
