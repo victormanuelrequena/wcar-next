@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://https://desarrollodesitiosweb.co
+
+# Sitemaps
+Sitemap: https://https://desarrollodesitiosweb.co/sitemap.xml
