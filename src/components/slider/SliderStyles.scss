@@ -1,0 +1,22 @@
+.arrow_slider {
+    height: 2.6em;
+    width: 2.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-orange);
+    font-size: 0.8em;
+    color: white;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.previous {
+        // opacity: .3;
+    }
+
+    &.disabled {
+        background-color: var(--color-gray);
+    }
+}

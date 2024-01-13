@@ -1,0 +1,72 @@
+.contact_page {
+    .card_contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        svg {
+            margin-bottom: 1em;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-bottom: 0;
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    form {
+        .form-control {
+            background-color: var(--color-dark-gray);
+            color: white;
+
+            &::placeholder {
+                color: #ffffff70;
+            }
+        }
+
+        select.form_control {
+            background-color: var(--color-dark-gray);
+            color: white;
+
+            // &::placeholder{
+            & option:disabled {
+                color: #ffffff70;
+            }
+        }
+
+        textarea.form_control {
+            background-color: transparent;
+            border: solid thin white;
+            color: white;
+            padding: 1em 1em;
+
+            &:focus {
+                background-color: var(--color-dark-gray);
+            }
+
+            &::placeholder {
+                color: white;
+            }
+        }
+    }
+
+    .footer {
+        @media screen and (min-width: 768px) {
+            background-color: var(--color-gray-light);
+        }
+    }
+}
+
+.btn-send {
+    width: 154px;
+    height: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #ec671b;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+}

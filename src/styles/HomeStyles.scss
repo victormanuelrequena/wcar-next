@@ -1,0 +1,151 @@
+.home_page {
+    section.first_section {
+        z-index: 0;
+        background-color: var(--color-gray-light);
+
+        &>* {
+            position: relative;
+            z-index: 0;
+        }
+
+        .img_car_01 {
+            margin-left: -50vw;
+            margin-right: -25vw;
+            width: calc(100% + 75vw);
+        }
+    }
+
+    .car_02 {
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url("/public/assets/home/car_02.png");
+            position: absolute;
+            left: 0;
+            top: -70%;
+            bottom: -125%;
+            right: 76%;
+            background-size: cover;
+            z-index: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            &::before {
+                content: none;
+                display: none;
+            }
+        }
+
+        @media (min-width: 900px) and (max-width: 1000px) {
+            &::before {
+                right: 70%;
+            }
+        }
+    }
+
+    .third_section {
+        position: relative;
+
+        @media screen and (max-width: 768px) {
+            background-color: black;
+
+            &::before {
+                content: none;
+                display: none;
+            }
+        }
+
+        &::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            left: 25%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .img_section {
+            width: 100%;
+            height: 200px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .img_section {
+                height: 150%;
+                min-height: 200px;
+                position: absolute;
+                right: 1em;
+                width: auto;
+                left: 40%;
+                top: -20%;
+                bottom: 0;
+                border-right: solid 1em white;
+            }
+        }
+    }
+
+    .fifth_section {
+        background-color: white;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            &::before {
+                content: "";
+                background-color: black;
+                background-image: url("/public/assets/recs/lines_box_large.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                right: 74%;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .home_page {
+        section.first_section {
+            .h1 {
+                font-size: 4em;
+                line-height: 1em;
+                font-weight: bold;
+            }
+
+            margin-bottom: 10em;
+
+            .img_car_01 {
+                margin-left: 0;
+                margin-right: 0;
+                left: 0;
+                right: -20vw;
+                bottom: -50px;
+                width: calc(100% + 20vw);
+                object-fit: cover;
+                z-index: 0;
+            }
+        }
+    }
+
+    .home_page~.footer {
+        background-color: var(--color-gray-light) !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .no_scrolled {
+        .home_page {
+            padding-top: 100px;
+        }
+    }
+}
